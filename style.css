@@ -1,0 +1,41 @@
+:root {
+  --cor-fundo: #01080E;
+  --cor-principal: #0B0D20;
+  --cor-secundaria: #212333;
+  --cor-destaque: #2BDEFD;
+  --cor-texto: #D7F9FF;
+}
+
+body {
+  background-color: var(--cor-fundo); /*define a cor de fundo do site.*/
+  color: var(--cor-texto); /*define a cor padrão dos textos.*/
+  display: flex; /*transforma o body em um container flexível*/
+  justify-content: center; /*centraliza o conteúdo na horizontal.*/
+  align-items: center; /* centraliza o conteúdo na vertical.*/
+  min-height: 100vh; /* garante que o conteúdo ocupe ao menos toda a altura da tela.*/
+}
+
+.caixa-principal {
+  background-color: var(--cor-principal);/*define a cor de fundo da caixa.*/
+  width: 90%; /*define que a caixa ocupa 90% da largura da tela.*/
+  max-width: 600px;/*define a largura máxima da caixa em 600 pixels*/
+  text-align: center; /*centraliza o texto.*/
+  padding: 20px; /*adiciona espaçamento interno, deixando o conteúdo mais confortável de ler.*/
+}
+
+h1 {
+  color: var(--cor-destaque); /*define a cor do título principal*/
+}
+button{
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+  transition: background-color 0.3s;
+}
+
+button:hover{
+  background-color: var(--cor-destaque);
+  color: var(--cor-principal);
+}
