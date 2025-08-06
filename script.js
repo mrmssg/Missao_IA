@@ -6,67 +6,67 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Você precisa decidir entre EXATAS ou HUMANAS. Qual destas atividades você prefere?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
-                afirmacao: "Achou assustador pensar que máquinas agora poderiam mudar o mundo."
+                texto: "Resolver cálculos e problemas de lógica.",
+                afirmacao: "Você gosta de trabalhar com números e raciocínio lógico, "
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "Percebeu que a IA consegue explicar termos complicados de forma simplificada "
+                texto: "Escrever textos ou ler histórias.",
+                afirmacao: "Você aprecia a linguagem e a interpretação,  "
             }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado: "Ao resolver um problema, você prefere:",
         alternativas: [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-                afirmacao: "e isso ajudou muito suas pesquisas sobre assuntos complexos. "
+                texto: "Procurar uma fórmula ou método para achar a resposta.",
+                afirmacao: "prefere soluções objetivas e estruturadas, "
             },
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao: " Percebeu que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes."
+                texto: "Pensar em diferentes interpretações e pontos de vista.",
+                afirmacao: "valoriza múltiplas perspectivas, "
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "Em uma prova, você se sai melhor em:",
         alternativas: [
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao: "afirmação"
+                texto: "Matemática e Ciências.",
+                afirmacao: "apresenta facilidade com cálculos e conceitos científicos, "
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "afirmação"
+                texto: "História e Português",
+                afirmacao: "apresenta habilidade em leitura e interpretação, "
             }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "Ao assistir a uma notícia, o que mais te chama atenção?",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: "afirmação"
+                texto: "Os números e dados apresentados.",
+                afirmacao: "gosta de analisar informações quantitativas, "
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao: "afirmação"
+                texto: "A forma como a história é contada.",
+                afirmacao: "se interessa pela narrativa e contexto, "
             }
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
+        enunciado: "Qual passatempo combina mais com você? ",
         alternativas: [
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao: "afirmação"
+                texto: "Jogar jogos de raciocínio ou resolver desafios..",
+                afirmacao: "gosta de resolver desafios lógicos, portanto apresenta um perfil de exatas "
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: "afirmação"
+                texto: "Ler livros e escrever textos.",
+                afirmacao: "criatividade e expressão escrita são marcas do seu perfil para humanas "
             }
         ]
     },
@@ -105,7 +105,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049, Gabriel…  ";
+    caixaPerguntas.textContent = "Segundo suas respostas…  ";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
